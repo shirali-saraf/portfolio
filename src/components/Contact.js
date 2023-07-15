@@ -29,7 +29,7 @@ export default function Contact(){
         //     alert("plzz enter a valid email address");
 
         // }
-        if(!(/\S+@\S+\.\S+/.test(email))){
+        else if(!(/\S+@\S+\.\S+/.test(email))){
             alert("plzz enter valid email");
 
         }
