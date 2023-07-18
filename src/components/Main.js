@@ -9,6 +9,8 @@ import {IoMdMail} from "react-icons/io";
 import {AiFillLinkedin} from "react-icons/ai";
 import {FaGithub} from "react-icons/fa";
 import {SiLeetcode} from "react-icons/si";
+import { BrowserRouter } from 'react-router-dom';
+import { NavHashLink} from 'react-router-hash-link';
 // import { Height } from "@material-ui/icons";
 // import EmailIcon from '@mui/icons-material/Email';
 // import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -26,6 +28,7 @@ export default function Main() {
   return (
     <>
     
+      <BrowserRouter>
       <div className="main_page">
         <div className="content">
           <div className="content1">
@@ -51,7 +54,7 @@ export default function Main() {
                 }/>
               </div>
               <div>
-                <button className="btn">AboutMe</button>
+                <NavHashLink to="#about" smooth><button className="btn">AboutMe</button></NavHashLink>
               </div>
               <div className="main_icons">
                 <div className="mi">
@@ -77,6 +80,7 @@ export default function Main() {
           </div>
         </div>
       </div>
+      </BrowserRouter>
   
   
       {/* <h1>shirali</h1> */}
