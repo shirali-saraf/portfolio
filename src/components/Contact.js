@@ -17,22 +17,18 @@ export default function Contact(){
         var name=document.getElementById("name");
         var email=document.getElementById("email");
         var message=document.getElementById("message");
-        // var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-        // var mailformat = /^[A-Z0-9. _%+-]+@[A-Z0-9. -]+\;
+        var mailformat = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;;
         if(name.value===""){
             alert("oopss...plzz enter your name");
         }
         if(email.value===""){
             alert("email is required...plzz enter a valid email address");
         }
-        // if(!(email.value.match(mailformat))){
-        //     alert("plzz enter a valid email address");
-
-        // }
-        else if(!(/\S+@\S+\.\S+/.test(email))){
-            alert("plzz enter valid email");
+        else if(!(email.value.match(mailformat))){
+            alert("plzz enter a valid email address");
 
         }
+        
         if(message.value===""){
             alert("message cant't be empty plzz enter some message");
         }
