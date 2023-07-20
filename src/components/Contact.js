@@ -9,10 +9,10 @@ export default function Contact(){
     },[])
 
     
-    function handler(e){
+    // function handler(e){
         
-        e.preventDefault();
-    }
+    //     e.preventDefault();
+    // }
     function form_validate(){
         var name=document.getElementById("name");
         var email=document.getElementById("email");
@@ -44,20 +44,20 @@ export default function Contact(){
             <div className='contact_section' data-Aos='fade-down'>
                <div className='contact_logo' data-Aos='fade-right'><img src={contactme} alt='logo'/></div>
                <div className='contact_fields' data-Aos='fade-left'>
-                  <form onSubmit={handler}>
+                  <form action="https://formspree.io/f/mdorkzve" method="POST">
                   <table>
                     <tbody>
                         <tr>
-                            <td><input type='text' placeholder='Name' className='contact_input' id='name'/> </td>
+                            <td><input type='text' placeholder='Name' className='contact_input' id='name' name='name' required/> </td>
                         </tr>
                         <tr>
-                            <td><input type='text' placeholder='Email' className='contact_input' id='email' /> </td>
+                            <td><input type='text' placeholder='Email' className='contact_input' id='email' name='email' required/> </td>
                         </tr>
                         <tr>
-                            <td><input type='text' placeholder='Phone' className='contact_input' /> </td>
+                            <td><input type='text' placeholder='Phone' className='contact_input' name='phone' /> </td>
                         </tr>
                         <tr>
-                            <td><textarea placeholder='Message' className='contact_input' style={{height:'160px'}} id='message'/> </td>
+                            <td><textarea placeholder='Message' className='contact_input' style={{height:'160px'}} id='message' name='message' required/> </td>
                         </tr>
                         <tr>
                             <td><button type='submit' className='contact_btn' onClick={form_validate}>Submit</button></td>
