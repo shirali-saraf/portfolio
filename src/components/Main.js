@@ -54,7 +54,7 @@ export default function Main() {
                 }/>
               </div>
               <div>
-                <NavHashLink to="#about" smooth><button className="btn">AboutMe</button></NavHashLink>
+                <NavHashLink to="#about" smooth><button className="main_btn">AboutMe</button></NavHashLink>
               </div>
               <div className="main_icons">
                 <div className="mi">

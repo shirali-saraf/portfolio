@@ -30,7 +30,7 @@ export default function AboutMe(){
                     <br/><br/>
                     Thank you for taking the time to learn more about me. I look forward to collaborating on exciting projects and creating innovative digital experiences. Feel free to reach out to discuss potential opportunities or to simply connect and share ideas. Let's build something incredible together!
                     </p></div>
-                <div><button className='btn'>Resume</button></div>
+                <div><button className='main_btn'>Resume</button></div>
             </div>
         </div>
         </div>

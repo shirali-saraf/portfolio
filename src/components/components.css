@@ -123,6 +123,7 @@
          /* top: 50px; 
         right: 700px;  */
     }  
+
     
 } 
 
@@ -160,23 +161,26 @@
     justify-content: center;
 } */
 
-.btn{
-    background-color: rgb(64, 199, 226);
+.main_btn{
+    /* background-color: rgb(64, 199, 226); */
+    background-color: rgb(34, 40, 49);
     margin-top: 10px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 3px;
-    padding: 15px 30px;
+    padding: 12px 30px;
     border-radius: 8px;
     cursor: pointer;
-    border: 2px solid black;
+    color: aliceblue;
+    /* border: 2px solid black; */
+    border: 3px solid rgb(85, 175, 235);
     transition: 1s;
 }
-.btn:hover{
+.main_btn:hover{
     transition: all 0.5s;
     color: rgb(233, 21, 21);
-    background-color: rgba(42, 175, 246, 0.771);
-    box-shadow: 1px 1px 4px rgb(134, 213, 244);
+    background-color: rgb(85, 175, 235);
+    /* box-shadow: 1px 1px 4px rgb(134, 213, 244); */
 }
 
 .main_icons{
@@ -586,6 +590,10 @@ textarea{
     font-size: 1rem;
     background-color: rgb(198, 237, 247);
     border-radius: 7px;
+}
+.contact_input:focus{
+    background-color: antiquewhite;
+    border: 2px solid black;
 }
 .table{
     width: 100%;
