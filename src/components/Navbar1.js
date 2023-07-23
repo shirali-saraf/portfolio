@@ -13,6 +13,14 @@ export default function Navbar(){
         const navbar=document.querySelector(".list");
         navbar.classList.toggle("active");
     }
+    var x = window.matchMedia("(max-width: 660px)");
+    // document.getElementsByClassName("testing").onClick=check_media(x);
+    function check_media(x){
+        if(window.matchMedia("(max-width: 660px)")){
+          
+           func();
+        }
+    }
     useEffect(()=>{
         Aos.init({duration:1000})
     },[])
@@ -25,7 +33,7 @@ export default function Navbar(){
         </div>
             <div className='list'>
                 <ul className='abc'>
-                    <li><NavHashLink to='#' smooth className='navlinks'>Home</NavHashLink></li>
+                    <li className='testing'><NavHashLink to='#' smooth className='navlinks' onClick={() => check_media({x})}>Home</NavHashLink></li>
                     <li><NavHashLink to='#about' smooth className='navlinks'>AboutMe</NavHashLink></li>
                     <li><NavHashLink to='#skill' smooth className='navlinks'>Skills</NavHashLink></li>
                     <li><NavHashLink to='#project' smooth className='navlinks'>Projects</NavHashLink></li>
