@@ -58,7 +58,7 @@ export default function Main() {
               </div>
               <div className="main_icons">
                 <div className="mi">
-                <a href="https://github.com/shirali-saraf" target="blank"><IoMdMail size='1.5rem' /></a>
+                <a href="mailto: 29shirali@gmail.com" target="blank"><IoMdMail size='1.5rem' /></a>
           
                 </div>
                 <div className="mi">
